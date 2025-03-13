@@ -31,7 +31,7 @@ function getEmployees() {
     employeesArray.push({
       name: person.innerText,
       position: person.getAttribute('data-position'),
-      salary: person.getAttribute('data-salary'),
+      salary: parseFloat(person.getAttribute('data-salary')),
       age: person.getAttribute('data-age'),
     });
   });
